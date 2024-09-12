@@ -189,7 +189,7 @@ profile-photo .img{
   flex-basis: 60%;
 }
 .about-content h4{
-  color: #202020;
+  color: #5F9EA0;
   font-size: 40px;
   line-height: 70px;
   text-transform: capitalize;
@@ -252,7 +252,7 @@ profile-photo .img{
 }
 
 .education-content .title{
-  color: #202020;
+  color: #5F9EA0;
 }
 .education-content .row .education,
 .education-content .row .internship
@@ -341,7 +341,7 @@ profile-photo .img{
   text-transform: uppercase;
   font-size: 40px;
   line-height: 40px;
-  color: #202020;
+  color: #5F9EA0;
   margin-bottom: 20px;
 }
 .project-title p{
@@ -368,7 +368,7 @@ profile-photo .img{
   background-color: #202020;
   width: 60px;
   height: 60px;
-  color: #333;
+  color: #E99678;
   font-size: 26px;
   line-height: 60px;
   border-radius: 50%;
