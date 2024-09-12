@@ -66,8 +66,8 @@ body{
 }
 
 .logo .fa-bolt {
-  color: #5F9EA0;
-  /*Cadet Blue coloring*/
+  color: #fff;
+  /*White coloring*/
   font-size: 19.5px;
   position: absolute; 
   top: 60%;
