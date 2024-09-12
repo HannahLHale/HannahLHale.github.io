@@ -153,7 +153,7 @@ profile-photo .img{
   font-size: 14px;
 }
 .profile-text h1{
-  color: #fed700;
+  color: #202020;
   font-size: 3rem; 
 }
 .profile-text p{
@@ -161,12 +161,13 @@ profile-photo .img{
 }
 .profile-text .social i{
   color : #e5e5e5;
+  /*lite gray color*/
   font-size: 18px;
   margin-right: 10px;
   transition: 0.5s;
 }
 .profile-text .social i:hover{
-  color:#fed700;
+  color:#202020;
   transform: rotate(360deg);
 }
 
@@ -188,7 +189,7 @@ profile-photo .img{
   flex-basis: 60%;
 }
 .about-content h4{
-  color: #fed700;
+  color: #202020;
   font-size: 40px;
   line-height: 70px;
   text-transform: capitalize;
@@ -237,7 +238,7 @@ profile-photo .img{
   box-shadow: 0 10px 10px -8px rgb(0 0 0 / 78%);
 }
 .btn.active{
-  border-color: #fed700;
+  border-color: #202020;
 }
 
 
@@ -251,7 +252,7 @@ profile-photo .img{
 }
 
 .education-content .title{
-  color: #fed700;
+  color: #202020;
 }
 .education-content .row .education,
 .education-content .row .internship
@@ -298,7 +299,7 @@ profile-photo .img{
   height: 100%;
   left: 7px;
   top: 0;
-  background-color: #fed700;  
+  background-color: #202020;  
 }
 .education-content .row .circle-dot{
   position: absolute;
@@ -340,7 +341,7 @@ profile-photo .img{
   text-transform: uppercase;
   font-size: 40px;
   line-height: 40px;
-  color: #fed700;
+  color: #202020;
   margin-bottom: 20px;
 }
 .project-title p{
@@ -364,7 +365,7 @@ profile-photo .img{
     transition: .3s;
 }
 .project i{
-  background-color: #fed700;
+  background-color: #202020;
   width: 60px;
   height: 60px;
   color: #333;
@@ -381,7 +382,7 @@ profile-photo .img{
   text-align: justify;
 }
 .project:hover{
-  border-color: #fed700;
+  border-color: #202020;
 }
 
 
@@ -395,7 +396,7 @@ profile-photo .img{
 .contact-content .contact-title h4{
   font-size: 40px;
   text-transform: capitalize;
-  color: #fed700;
+  color: #202020;
   padding-bottom: 10px;
 }
 .contact-content .contact-title p{
