@@ -30,8 +30,6 @@ body{
 }
 
 
-
-
       /*---------------------------Header---------------------------*/
 
 .header-area{
@@ -65,7 +63,7 @@ body{
   font-weight: 700;
 }
 
-.logo .fa-bolt {
+.logo .fa-desktop {
   color: #fff;
   /*White coloring*/
   font-size: 19.5px;
