@@ -21,8 +21,8 @@ body{
   font-family: 'Lexend', sans-serif;
   font-size:16px;
   line-height:24px; 
-  background-color:#202020;
-  /*Dark gray coloring*/
+  background-color:#FFFFF0;
+  /*IVORY coloring*/
 }
 .container{
   width: 1170px;
@@ -175,7 +175,7 @@ profile-photo .img{
 
 .about-area{
   padding-top: 130px;
-  background-color: #202020;
+  background-color: #FFFFF0;
 }
 .about{
   display: flex;
@@ -430,17 +430,13 @@ profile-photo .img{
 }
 
 
-
-
-
-
 /*---------------------------Footer---------------------------*/
 .footer {
     max-width: 950px;
     margin: 0 auto;
     padding: 15px 0 26px;
     border-top: 1px solid rgba(255, 255, 255, 0.1); 
-    color: rgba(255, 255, 255, 0.4);
+    color: rgbargb(255, 255, 240);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -448,16 +444,13 @@ profile-photo .img{
   }
   .footer .message {
     font-size: 12px;
-    color: rgba(255, 255, 255, 0.4);
+    color: rgba(169, 169, 169);
     margin-bottom: 10px;
   }
   
   .copyright {
     font-size: 12px;
   }
-
-
-
 
  /*------------------- Responsive Design on small screen -------------------*/
 
