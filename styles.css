@@ -255,13 +255,13 @@ profile-photo .img{
 .education-content .row .education,
 .education-content .row .internship
 {
-  color: #e5e5e5;
+  color: #202020;
   flex:0 0 50%;
   max-width: 50%;
   margin-top: 30px;
 } 
 .education-content  h3.title{
-  font-size:24px;
+  font-size:35px;
   margin-bottom: 30px;
   font-weight: 700;
 }
