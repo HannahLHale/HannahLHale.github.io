@@ -428,6 +428,13 @@ profile-photo .img{
   margin-top: -8px;
   display: block;
 }
+input, textarea {
+    font-family: inherit; /* Use the same font as the parent element */
+    font-size: inherit; /* Use the same font size as the parent element */
+    font-weight: inherit; /* Optional: Ensures the font weight is consistent */
+    color: inherit; /* Ensures text color matches */
+}
+
 
 
 /*---------------------------Footer---------------------------*/
