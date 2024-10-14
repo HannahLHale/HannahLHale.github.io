@@ -1,4 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Lexend:wght@400;500;600;700&display=swap');
+body {
+    background-image: url('bggithub.jpg'); /* Replace with your image path */
+    background-size: cover; /* Ensures the image covers the entire page */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Prevent the image from repeating */
+}
 
 *{
   margin:0;
@@ -130,8 +136,7 @@ body{
   height:  300px;
   border-radius: 50%;
   overflow: hidden;
-  border: 15px solid #444444;
-  box-shadow: 5px 7px 25px rgba(0, 0, 0, 0.5)
+  box-shadow: 9px 9px 25px rgba(0, 0, 0, 0.5)
 }
 profile-photo .img{
   height: 100%;
@@ -175,7 +180,6 @@ profile-photo .img{
 
 .about-area{
   padding-top: 130px;
-  background-color: #b2b296;
 }
 .about{
   display: flex;
