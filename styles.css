@@ -378,22 +378,23 @@ profile-photo .img{
 }
 .projects{
   display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     flex-wrap: wrap;
-    gap: 20px; /* Add gap between project cards */
+    gap: 20px;
+    width: 100% /* Add gap between project cards */
 }
 .project{
     /* padding: 30px 15px; */
     color: rgb(0, 0, 0);
     border: 2px solid #ead0d0;
     border-radius: 10px;
-    width: 100%;
+    overflow: hidden;
     position: relative;
-    flex-basis: calc(33.33% - 20px); /* Adjust width to prevent overlap */
-    padding: 25px;
+    flex: 1 1 30%;
+    padding: 20px;
     margin-bottom: 20px; /* Ensure there's spacing between project sections */
     text-align: center;
-    transition: 0.3s;
+    transition: 0.3s ease-in-out;
 }
 .project i{
   background-color: #202020;
@@ -429,8 +430,11 @@ profile-photo .img{
     height: auto;
     position: relative;
     perspective: 1000px;
+    padding-bottom: 40px;
 }
 #carousel {
+   
+   margin-bottom:40 px;
     width: 100%;
     height: 100%;
     position: absolute;
@@ -440,6 +444,10 @@ profile-photo .img{
 #carousel:hover {
     animation-play-state: paused;
 }
+.carousel-item {
+    height: 400px; /* Adjust the height to your preference */
+}
+
 #carousel figure {
     display: block;
     position: absolute;
@@ -484,9 +492,10 @@ profile-photo .img{
   padding-bottom: 20px;
 }
 .contact{
+    padding-top: 40px;
     max-width: 700px;
     margin: auto;
-    padding: 20px;
+    padding: 25 px;
     text-align: center;
 }
 .contact input,.contact textarea{
