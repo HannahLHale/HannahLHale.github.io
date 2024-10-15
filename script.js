@@ -15,7 +15,13 @@ $(document).ready(function () {
 
   // input text for typing animation
   $("#holder").writeText("WEB DESIGNER + FRONT-END DEVELOPER");
+/*
 
+3D images gallery. inspired from David DeSandro's tutorial
+
+(http://24ways.org/2010/intro-to-css-3d-transforms)
+
+*/
   // initialize wow.js
   new WOW().init();
 

@@ -1,9 +1,28 @@
 @import url('https://fonts.googleapis.com/css2?family=Lexend:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Anaheim');
+/* Global Resets */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    outline: none;
+    border: none;
+}
+*:before,
+*:after {
+    box-sizing: border-box;
+}
 body {
-    background-image: url('bggithub.jpg'); /* Replace with your image path */
-    background-size: cover; /* Ensures the image covers the entire page */
-    background-position: center; /* Center the image */
-    background-repeat: no-repeat; /* Prevent the image from repeating */
+    min-height: 100%;
+    font-family: 'Lexend', sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    background-color: #b2b296;
+    background-image: url('bggithub.jpg'); /* Your image path */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 *{
@@ -17,11 +36,21 @@ a{
   color:#fff;
   transition:0.3s; 
 }
+a:hover {
+    color: #549699; /* Cadet Blue */
+}
 ul{
   list-style:none;
 }
 img{
   max-width: 100%;
+  -webkit-filter: grayscale(1);
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+img:hover {
+    -webkit-filter: grayscale(0);
+    transform: scale(1.2, 1.2);
 }
 body{
   font-family: 'Lexend', sans-serif;
@@ -247,10 +276,10 @@ profile-photo .img{
 /*---------------------------Education & Internship---------------------------*/
 
 .education-content .row{
-  display: flex;
-  border-radius: 5px;
-  height: 400px;
-  margin-bottom: 250px;
+ display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 50px; /* Ensure enough space between rows */
 }
 
 .education-content .title{
@@ -349,8 +378,9 @@ profile-photo .img{
 }
 .projects{
   display: flex;
-  justify-content:space-between;
-  flex-wrap: wrap;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px; /* Add gap between project cards */
 }
 .project{
     /* padding: 30px 15px; */
@@ -359,10 +389,11 @@ profile-photo .img{
     border-radius: 10px;
     width: 100%;
     position: relative;
+    flex-basis: calc(33.33% - 20px); /* Adjust width to prevent overlap */
     padding: 25px;
+    margin-bottom: 20px; /* Ensure there's spacing between project sections */
     text-align: center;
-    flex-basis: 32%;
-    transition: .3s;
+    transition: 0.3s;
 }
 .project i{
   background-color: #202020;
@@ -389,30 +420,81 @@ profile-photo .img{
 
 
 
+
+/* Carousel */
+.container {
+   margin: 4% auto;
+    width: 100%;
+    max-width: 600px; /* Limit max width */
+    height: auto;
+    position: relative;
+    perspective: 1000px;
+}
+#carousel {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    transform-style: preserve-3d;
+    animation: rotation 20s infinite linear;
+}
+#carousel:hover {
+    animation-play-state: paused;
+}
+#carousel figure {
+    display: block;
+    position: absolute;
+    width: 186px;
+    height: 116px;
+    left: 10px;
+    top: 10px;
+    background: black;
+    overflow: hidden;
+    border: solid 5px black;
+}
+#carousel figure:nth-child(1) {
+    transform: rotateY(0deg) translateZ(288px);
+}
+/* Add remaining nth-child rules here */
+
+@keyframes rotation {
+    from {
+        transform: rotateY(0deg);
+    }
+    to {
+        transform: rotateY(360deg);
+    }
+}
+
+/* Continue with your existing styles... */
+
+/* For responsive design, button styles, contact section, etc. */
 /*---------------------------Contact Me---------------------------*/
 .contact-content{
   padding: 100px 0;
-  color: #fff;
+  color: hsl(0, 0%, 100%);
   text-align: center;
 }
 .contact-content .contact-title h4{
-  font-size: 40px;
+  font-size: 45px;
   text-transform: capitalize;
-  color: #202020;
+  color: #180f0f;
   padding-bottom: 10px;
 }
 .contact-content .contact-title p{
   padding-bottom: 20px;
 }
 .contact{
-  max-width: 700px;
-  margin: auto;
+    max-width: 700px;
+    margin: auto;
+    padding: 20px;
+    text-align: center;
 }
 .contact input,.contact textarea{
   width: 100%;
   padding: 15px;
   border: 0;
   margin-bottom: 10px;
+  color:#000000
 }
 
 .contact .submit{
@@ -427,7 +509,7 @@ profile-photo .img{
   cursor: pointer;
 }
 #msg{
-  color: #fff;
+  color: #392d2d;
   font-size: 20px;
   margin-top: -8px;
   display: block;
@@ -446,17 +528,17 @@ input, textarea {
     max-width: 950px;
     margin: 0 auto;
     padding: 15px 0 26px;
-    border-top: 1px solid rgba(255, 255, 255, 0.1); 
-    color: rgbargb(255, 255, 240);
+    border-top: 1px  rgba(255, 253, 253, 0); 
+    background-color:rgba(92, 92, 90, 0.673);
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
   }
   .footer .message {
-    font-size: 12px;
-    color: rgba(169, 169, 169);
-    margin-bottom: 10px;
+    font-size: 15px;
+    color: rgb(204, 184, 184);
+    margin-bottom: 15px;
   }
   
   .copyright {
