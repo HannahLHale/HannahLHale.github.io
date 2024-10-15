@@ -419,30 +419,32 @@ profile-photo .img{
   background-color: bisque;
 }
 
-
-
-
 /* Carousel */
 .container {
    margin: 4% auto;
     width: 100%;
-    max-width: 600px; /* Limit max width */
-    height: auto;
+    max-width: 1200px;
+    max-height: 1200px;
     position: relative;
     perspective: 1000px;
     padding-bottom: 40px;
 }
 #carousel {
    
-   margin-bottom:40 px;
+   margin-bottom:10 px;
     width: 100%;
     height: 100%;
     position: absolute;
     transform-style: preserve-3d;
     animation: rotation 20s infinite linear;
 }
+.carousel-item img {
+    height: 100%; /* Forces the image to take the full height of the carousel item */
+    object-fit: cover; /* Ensures the image covers the space without distortion */
+}
+
 #carousel:hover {
-    animation-play-state: paused;
+    animation-play-state:paused;
 }
 .carousel-item {
     height: 400px; /* Adjust the height to your preference */
@@ -452,12 +454,13 @@ profile-photo .img{
     display: block;
     position: absolute;
     width: 186px;
-    height: 116px;
+    height: 186px;
     left: 10px;
     top: 10px;
     background: black;
     overflow: hidden;
-    border: solid 5px black;
+    padding-bottom: 24px;
+    
 }
 #carousel figure:nth-child(1) {
     transform: rotateY(0deg) translateZ(288px);
@@ -473,9 +476,7 @@ profile-photo .img{
     }
 }
 
-/* Continue with your existing styles... */
 
-/* For responsive design, button styles, contact section, etc. */
 /*---------------------------Contact Me---------------------------*/
 .contact-content{
   padding: 100px 0;
