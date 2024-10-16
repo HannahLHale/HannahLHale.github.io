@@ -275,6 +275,12 @@ profile-photo .img{
 
 /*---------------------------Education & Internship---------------------------*/
 /* Apply Flexbox to the parent container holding both boxes */
+.education-job-wrapper{
+  display: flex;
+  justify-content: space-between; /* Align the boxes horizontally with even space */
+  align-items: flex-start; /* Ensures both boxes stretch to the same height */
+  margin-top: 10px ;
+}
 .container {
   display: flex;
   justify-content: space-around; /* Align them horizontally with even space */
@@ -294,8 +300,14 @@ profile-photo .img{
 .box h2 {
   text-align: center; /* Center align the headers */
 }
+.box h3.title{
+  font-size: 25px;
+  margin-bottom: 10px;
+}
 
-
+.timeline-item{
+  margin-bottom:20px;
+}
 .education-content .row{
  display: flex;
     flex-wrap: wrap;
