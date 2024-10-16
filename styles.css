@@ -274,56 +274,23 @@ profile-photo .img{
 
 
 /*---------------------------Education & Internship---------------------------*/
-/* Apply Flexbox to the parent container holding both boxes */
-.education-job-wrapper{
-  display: flex;
-  justify-content: space-between; /* Align the boxes horizontally with even space */
-  align-items: flex-start; /* Ensures both boxes stretch to the same height */
-  margin-top: 10px ;
-}
-.container {
-  display: flex;
-  justify-content: space-around; /* Align them horizontally with even space */
-  align-items: stretch; /* Ensures both boxes stretch to the same height */
-}
 
-/* Style both boxes equally */
-.box {
-  width: 45%; /* Set width of each box to be equal */
-  padding: 20px; /* Add padding for a nicer layout */
-  background-color: rgba(255, 255, 255, 0.1); /* Optional: Set a background color */
-  border-radius: 10px; /* Optional: Give rounded corners */
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle shadow */
-}
-
-/* Additional styling if needed */
-.box h2 {
-  text-align: center; /* Center align the headers */
-}
-.box h3.title{
-  font-size: 25px;
-  margin-bottom: 10px;
-}
-
-.timeline-item{
-  margin-bottom:20px;
-}
 .education-content .row{
  display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin-bottom: 10px; /* Ensure enough space between rows */
+    margin-bottom: 50px; /* Ensure enough space between rows */
 }
 
 .education-content .title{
   color: #2d7577;
 }
 .education-content .row .education,
-.education-content .row .experience
+.education-content .row .internship
 {
   color: #202020;
   flex:0 0 50%;
-  max-width: 50%;
+  max-width: 100%;
   margin-top: 30px;
 } 
 .education-content  h3.title{
@@ -348,7 +315,7 @@ profile-photo .img{
   padding-left: 37px;
   padding-bottom: 50px; 
 }
-.education-content .row  .experience .timeline-item{
+.education-content .row  .internship .timeline-item{
   position:relative;
   padding-left: 37px;
   padding-bottom: 30px; 
@@ -379,12 +346,16 @@ profile-photo .img{
   font-size: 18px;
   margin-bottom: 12px;
 }
-.education-content .row .experience .timeline-title  {
+.education-content .row .internship .timeline-title  {
   font-weight: 700;
   font-size: 18px;
   margin-bottom: 8px;
 }
-
+.education-content .row .timeline-text{
+  line-height: 25px;
+  font-size: 16px;
+  text-align: justify;
+}
 
 /*---------------------------Projects---------------------------*/
 .project-content{
@@ -420,7 +391,8 @@ profile-photo .img{
     overflow: hidden;
     position: relative;
     flex: 1 1 30%;
-    padding: 10px;
+    padding: 20px;
+    margin-bottom: 20px; /* Ensure there's spacing between project sections */
     text-align: center;
     transition: 0.3s ease-in-out;
 }
@@ -515,6 +487,7 @@ profile-photo .img{
   font-size: 45px;
   text-transform: capitalize;
   color: #180f0f;
+  padding-bottom: 10px;
 }
 .contact-content .contact-title p{
   padding-bottom: 20px;
