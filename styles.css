@@ -279,14 +279,14 @@ profile-photo .img{
  display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin-bottom: 50px; /* Ensure enough space between rows */
+    margin-bottom: 10px; /* Ensure enough space between rows */
 }
 
 .education-content .title{
   color: #2d7577;
 }
 .education-content .row .education,
-.education-content .row .internship
+.education-content .row .experience
 {
   color: #202020;
   flex:0 0 50%;
@@ -315,7 +315,7 @@ profile-photo .img{
   padding-left: 37px;
   padding-bottom: 50px; 
 }
-.education-content .row  .internship .timeline-item{
+.education-content .row  .experience .timeline-item{
   position:relative;
   padding-left: 37px;
   padding-bottom: 30px; 
@@ -346,16 +346,12 @@ profile-photo .img{
   font-size: 18px;
   margin-bottom: 12px;
 }
-.education-content .row .internship .timeline-title  {
+.education-content .row .experience .timeline-title  {
   font-weight: 700;
   font-size: 18px;
   margin-bottom: 8px;
 }
-.education-content .row .timeline-text{
-  line-height: 25px;
-  font-size: 16px;
-  text-align: justify;
-}
+
 
 /*---------------------------Projects---------------------------*/
 .project-content{
@@ -391,8 +387,7 @@ profile-photo .img{
     overflow: hidden;
     position: relative;
     flex: 1 1 30%;
-    padding: 20px;
-    margin-bottom: 20px; /* Ensure there's spacing between project sections */
+    padding: 10px;
     text-align: center;
     transition: 0.3s ease-in-out;
 }
@@ -487,7 +482,6 @@ profile-photo .img{
   font-size: 45px;
   text-transform: capitalize;
   color: #180f0f;
-  padding-bottom: 10px;
 }
 .contact-content .contact-title p{
   padding-bottom: 20px;
