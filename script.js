@@ -16,25 +16,30 @@ $(document).ready(function () {
   // input text for typing animation
   $("#holder").writeText("WEB DESIGNER + FRONT-END DEVELOPER");
 
-var swiper = new Swiper(".swiper", {
+var swiper = new Swiper(".swiper-container", {
   grabCursor: true,
-  initialSlide: 4,
   centeredSlides: true,
   slidesPerView: "auto",
   spaceBetween: 10,
-  speed: 1000,
-  freeMode: false,
-  mousewheel: {
-    thresholdDelta: 30,
+  loop:true,
+  autoplay:{
+    delay:3000;
+    disableOnInteraction: false,
   },
   pagination: {
     el: ".swiper-pagination",
+    clickable: true,
+  },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
   },
   on: {
     click(event) {
       swiper.slideTo(this.clickedIndex);
     },
   },
+  speed:1000,
 });
 
 particlesJS("particles-js", {
