@@ -459,7 +459,13 @@ profile-photo .img{
   width: 45%;
   height: 45%;
   object-fit: cover;
-  transition: 1s;
+  filter: grayscale(100%);
+  -webkit-filter: grayscale(100%);
+  transition: filter 1s ease; /* Smooth transition on hover */
+}
+.swiper-slide img:hover {
+  filter: none;
+  -webkit-filter: grayscale(0);
 }
 
 .swiper-slide p {
