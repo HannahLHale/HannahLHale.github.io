@@ -574,7 +574,7 @@ input, textarea {
 
 /*---------------------------Footer---------------------------*/
 .footer {
-    max-width: 1060;
+    max-width: max-content;
     margin: 0 auto;
     padding: 15px 0 26px;
     border-top: 1px  rgba(255, 253, 253, 0); 
