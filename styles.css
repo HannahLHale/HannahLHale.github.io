@@ -263,71 +263,38 @@ profile-photo .img{
 
 
 /*---------------------------Education & Internship---------------------------*/
-
-.education-content .row{
- display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    margin-bottom: 50px; /* Ensure enough space between rows */
-}
-
+/* Container for both sections */
 .education-job-wrapper {
   display: flex;
-  justify-content: space-between; /* Adds space between the boxes */
+  flex-wrap: wrap; /* Ensure content wraps on smaller screens */
+  gap: 20px; /* Space between the boxes */
+  justify-content: space-between; /* Align the two boxes horizontally */
 }
 
+/* Each individual box (Education and Job Experience) */
+.box {
+  flex: 0 0 48%; /* Take 48% of the width and leave a small gap */
+  max-width: 48%; /* Ensure boxes stay side by side */
+  background-color: #f9f9f98f; /* Light background color */
+  border: 1px solid #e5e5e5; /* Border for separation */
+  border-radius: 10px; /* Rounded corners */
+  padding: 20px;
+  min-height: 300px; /* Ensures equal height */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional shadow for better visuals */
+}
 
-.education-content .title{
-  color: #2d7577;
-}
-.education-content .row .education,
-.education-content .row .experience
-{
-  color: #202020;
-  flex:0 0 50%;
-  max-width: 100%;
-  margin-top: 30px;
-} 
-.education-content  h3.title{
-  font-size:35px;
-  margin-bottom: 30px;
-  font-weight: 700;
-}
-.education-content .row.timeline-box{
-  flex:0 0 100%;
-  max-width: 100%;  
-}
-.education-content .row .timeline{
-  /* background-color:#e5e5e5; */
-  padding: 30px 15px;
-  border: 1px solid #e5e5e5;
-  border-radius: 10px;
-  width: 100%;
+/* Adjust the timeline item */
+.timeline-item {
+  padding-bottom: 20px;
   position: relative;
 }
-.education-content .row .timeline-item{
-  position:relative;
-  padding-left: 37px;
-  padding-bottom: 50px; 
-}
-.education-content .row  .experience .timeline-item{
-  position:relative;
-  padding-left: 37px;
-  padding-bottom: 50px; 
-}
-.education-content .row .timeline-item:last-child{
+
+.timeline-item:last-child {
   padding-bottom: 0;
 }
-.education-content .row .timeline-item::before{
-  content: "";
-  width: 1px;
-  position: absolute;
-  height: 100%;
-  left: 7px;
-  top: 0;
-  background-color: #202020;  
-}
-.education-content .row .circle-dot{
+
+/* Circle for each timeline point */
+.circle-dot {
   position: absolute;
   left: 0;
   top: 0;
@@ -336,20 +303,19 @@ profile-photo .img{
   border-radius: 50%;
   background-color: #e5e5e5;
 }
-.education-content .row .timeline-title  {
-  font-weight: 700;
-  font-size: 18px;
-  margin-bottom: 12px;
+
+/* Title of each section */
+.title {
+  font-size: 20px;
+  color: #2d7577; /* Title color */
+  margin-bottom: 20px;
+  font-weight: bold;
+  text-transform: uppercase; /* Optional for better styling */
 }
-.education-content .row .experience .timeline-title  {
-  font-weight: 700;
-  font-size: 18px;
-  margin-bottom: 8px;
-}
-.education-content .row .timeline-text{
-  line-height: 25px;
-  font-size: 16px;
-  text-align: justify;
+
+/* Spacing for the container inside timeline */
+.timeline-box {
+  padding-top: 10px;
 }
 
 /*---------------------------Projects---------------------------*/
