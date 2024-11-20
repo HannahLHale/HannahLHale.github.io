@@ -313,7 +313,7 @@ profile-photo .img{
 .education-content .row  .experience .timeline-item{
   position:relative;
   padding-left: 37px;
-  padding-bottom: 30px; 
+  padding-bottom: 50px; 
 }
 .education-content .row .timeline-item:last-child{
   padding-bottom: 0;
@@ -381,7 +381,7 @@ profile-photo .img{
 .project{
     /* padding: 30px 15px; */
     color: rgb(0, 0, 0);
-    border: 2px solid #ead0d0;
+    border: 2px solid #946767;
     border-radius: 10px;
     overflow: hidden;
     position: relative;
@@ -525,7 +525,7 @@ profile-photo .img{
 .contact-content .contact-title h4{
   font-size: 45px;
   text-transform: capitalize;
-  color: #180f0f;
+  color: #000000;
   padding-bottom: 10px;
 }
 .contact-content .contact-title p{
