@@ -281,7 +281,7 @@ profile-photo .img{
   color: #2d7577;
 }
 .education-content .row .education,
-.education-content .row .internship
+.education-content .row .experience
 {
   color: #202020;
   flex:0 0 50%;
@@ -310,7 +310,7 @@ profile-photo .img{
   padding-left: 37px;
   padding-bottom: 50px; 
 }
-.education-content .row  .internship .timeline-item{
+.education-content .row  .experience .timeline-item{
   position:relative;
   padding-left: 37px;
   padding-bottom: 30px; 
@@ -341,7 +341,7 @@ profile-photo .img{
   font-size: 18px;
   margin-bottom: 12px;
 }
-.education-content .row .internship .timeline-title  {
+.education-content .row .experience .timeline-title  {
   font-weight: 700;
   font-size: 18px;
   margin-bottom: 8px;
