@@ -13,8 +13,17 @@ $(document).ready(function () {
     };
   })(jQuery);
 
-  // input text for typing animation
-  $("#holder").writeText("WEB DESIGNER + FRONT-END DEVELOPER");
+// Toggle gallery visibility on "Projects" header click
+// Toggle gallery visibility on button click
+// Toggle gallery visibility on button click
+document.getElementById('toggle-gallery').addEventListener('click', function () {
+    const gallery = document.getElementById('project-gallery');
+    gallery.classList.toggle('hidden');
+});
+
+
+
+
 
 var swiper = new Swiper(".swiper-container", {
   grabCursor: true,
